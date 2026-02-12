@@ -1,0 +1,55 @@
+﻿                    <!-- RIJEN -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <!-- vaste hoogte -->
+                    <RowDefinition Height="*"/>
+                    <!-- resterende hoogte -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- passende hoogte -->
+                </Grid.RowDefinitions>
+
+                <!-- KOLOMMEN -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <!-- 1/4 -->
+                    <ColumnDefinition Width="3*"/>
+                    <!-- 3/4 -->
+                </Grid.ColumnDefinitions>
+
+                <!-- HEADER -->
+                <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+               Background="#CDEFFD"
+               Padding="5"
+               FontWeight="SemiBold">
+        HEADER - vaste hoogte van 40px, over 2 kolommen
+                </TextBlock>
+
+                <!-- ZIJBALK -->
+                <TextBlock Grid.Row="1" Grid.Column="0"
+               Background="#EFCDFD"
+               Padding="10"
+               TextWrapping="Wrap"
+               FontSize="10">
+        ZIJBALK — neemt een kwart van de breedte in
+                </TextBlock>
+
+                <!-- CONTENT -->
+                <TextBlock Grid.Row="1" Grid.Column="1"
+               Background="#FEEDFD"
+               Padding="10"
+               TextWrapping="Wrap"
+               FontSize="10">
+        CONTENT — neemt driekwart van de breedte in
+                </TextBlock>
+
+                <!-- FOOTER -->
+                <TextBlock Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+               Background="#CDFDEF"
+               Padding="5"
+               FontSize="8"
+               FontStyle="Italic"
+               TextAlignment="Center">
+        footer - passend, over 2 kolommen, gecentreerd
+                </TextBlock>
+
+            </Grid>
