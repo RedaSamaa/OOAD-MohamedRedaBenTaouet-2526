@@ -10,12 +10,56 @@
 
     <Grid Background="White">
         <Grid.RowDefinitions>
-            <RowDefinition Height="250px"/>
+            <RowDefinition Height="250"/>
+            <!-- ✅ retiré "px" -->
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Frame x:Name="fraAssignment" Grid.Row="0" Grid.Column="0" Background="#eeeeee" />
         <Border Background="#EEEFFD" BorderBrush="#6B6CB0" BorderThickness="1" Padding="12" Margin="20" Grid.Row="1">
             <!-- TODO: PAS HIERONDER DE XAML AAN -->
+
+            <!-- ✅ Opdracht 1 : Grid met 2 kolommen, MaxWidth 500px -->
+            <Grid MaxWidth="500">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="140"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- ✅ Opdracht 2 : Verticale StackPanel kolom 1 -->
+                <StackPanel Grid.Column="0" Orientation="Vertical" Margin="0,0,10,0">
+
+                    <!-- ✅ Opdracht 3,4 : Label -->
+                    <Label FontWeight="Bold" Padding="5,0" Margin="0,0,0,10">Voornaam</Label>
+
+                    <!-- ✅ Opdracht 5 : TextBox -->
+                    <TextBox BorderBrush="LightBlue" Height="30" VerticalContentAlignment="Center"/>
+
+                    <!-- ✅ Opdracht 6 : TextBlock -->
+                    <TextBlock Foreground="#666666" FontStyle="Italic" FontSize="10" 
+                               TextAlignment="Right" Padding="5">
+                        Verplicht veld
+                    </TextBlock>
+
+                </StackPanel>
+
+                <!-- ✅ Opdracht 2 : Verticale StackPanel kolom 2 -->
+                <StackPanel Grid.Column="1" Orientation="Vertical">
+
+                    <!-- ✅ Opdracht 3,4 : Label -->
+                    <Label FontWeight="Bold" Padding="5,0" Margin="0,0,0,10">Achternaam</Label>
+
+                    <!-- ✅ Opdracht 5 : TextBox -->
+                    <TextBox BorderBrush="LightBlue" Height="30" VerticalContentAlignment="Center"/>
+
+                    <!-- ✅ Opdracht 6 : TextBlock -->
+                    <TextBlock Foreground="#666666" FontStyle="Italic" FontSize="10" 
+                               TextAlignment="Right" Padding="5">
+                        Verplicht veld
+                    </TextBlock>
+
+                </StackPanel>
+
+            </Grid>
         </Border>
     </Grid>
 </Page>
