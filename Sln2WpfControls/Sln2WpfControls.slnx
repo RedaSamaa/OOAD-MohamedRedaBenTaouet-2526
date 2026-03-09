@@ -1,1 +1,12 @@
-<Solution />
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="WpfControlsOefenblad/App.config" />
+    <File Path="WpfControlsOefenblad/App.xaml" />
+    <File Path="WpfControlsOefenblad/App.xaml.cs" />
+    <File Path="WpfControlsOefenblad/AssemblyInfo.cs" />
+    <File Path="WpfControlsOefenblad/MainWindow.xaml" />
+    <File Path="WpfControlsOefenblad/MainWindow.xaml.cs" />
+    <File Path="WpfControlsOefenblad/WpfControlsOefenblad.csproj" />
+    <File Path="WpfControlsOefenblad/WpfControlsOefenblad.csproj.user" />
+  </Folder>
+</Solution>
