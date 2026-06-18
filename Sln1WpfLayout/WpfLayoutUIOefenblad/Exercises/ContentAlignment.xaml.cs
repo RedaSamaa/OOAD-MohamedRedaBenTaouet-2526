@@ -10,9 +10,4 @@ public partial class ContentAlignment : Page
     {
         InitializeComponent();
     }
-
-    private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-    {
-
-    }
 }

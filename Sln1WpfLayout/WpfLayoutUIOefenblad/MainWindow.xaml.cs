@@ -2,7 +2,6 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using WpfLayoutUIOefenblad.Assignments;
 using WpfLayoutUIOefenblad.Helpers;
 
 namespace WpfLayoutUIOefenblad;
@@ -15,56 +14,8 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
         this.Loaded += this.MainWindow_Loaded;
-        mainFrame.Navigated += MainFrame_Navigated;
     }
 
-    private void MainFrame_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
-    {
-        if (e.Content is not Page page)
-        {
-            return;
-        }
-
-        // Wacht tot de Page volledig is geladen voordat we de visual tree doorzoeken
-        page.Loaded += (s, args) =>
-        {
-            // Zoek het fraAssignment Frame in de geladen pagina
-            Frame? assignmentFrame = FindChild<Frame>(page, "fraAssignment");
-            if (assignmentFrame != null)
-            {
-                // Bepaal de bestandsnaam op basis van de pagina class naam
-                string fileName = page.GetType().Name;
-                assignmentFrame.Navigate(new AssignmentViewer(fileName));
-            }
-        };
-    }
-
-    private static T? FindChild<T>(DependencyObject parent, string childName) where T : DependencyObject
-    {
-        if (parent == null)
-        {
-            return null;
-        }
-
-        int childrenCount = VisualTreeHelper.GetChildrenCount(parent);
-        for (int i = 0; i < childrenCount; i++)
-        {
-            DependencyObject child = VisualTreeHelper.GetChild(parent, i);
-
-            if (child is T typedChild && child is FrameworkElement element && element.Name == childName)
-            {
-                return typedChild;
-            }
-
-            T? foundChild = FindChild<T>(child, childName);
-            if (foundChild != null)
-            {
-                return foundChild;
-            }
-        }
-
-        return null;
-    }
 
     private void MainWindow_Loaded(object? sender, RoutedEventArgs e)
     {
@@ -141,7 +92,7 @@ public partial class MainWindow : Window
         Page? page = (Page?)Activator.CreateInstance(navPageInfo.PageType);
         if (page != null)
         {
-            mainFrame.Navigate(page);
+            fraMain.Navigate(page);
         }
 
         Properties.Settings.Default.LastSelectedExercise = navPageInfo.Order;

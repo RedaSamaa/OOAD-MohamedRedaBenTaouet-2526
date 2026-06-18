@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfLayoutUIOefenblad"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="1100" Background="#ffffee">
+        Title="WPF Layout Oefenblad" Height="700" Width="1100" Background="#ffffee">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="320"/>
@@ -62,7 +62,7 @@
             </Grid>
         </Border>
 
-        <Frame x:Name="mainFrame"
+        <Frame x:Name="fraMain"
                Grid.Column="1"
                Margin="10"
                NavigationUIVisibility="Hidden"/>

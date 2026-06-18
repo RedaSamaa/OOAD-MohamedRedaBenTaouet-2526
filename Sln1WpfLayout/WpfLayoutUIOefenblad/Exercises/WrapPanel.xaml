@@ -9,15 +9,11 @@
       Title="WrapPanel">
     <Grid Background="White">
         <Grid.RowDefinitions>
-            <RowDefinition Height="250"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Frame x:Name="fraAssignment" Grid.Row="0" Grid.Column="0" Background="#eeeeee" />
-        <Border Background="#CDEFFD" BorderBrush="#2B6CB0" BorderThickness="1" Padding="12" Margin="20" Grid.Row="1">
+        <Border Background="#CDEFFD" BorderBrush="#2B6CB0" BorderThickness="1" Padding="12" Margin="20">
             <!-- TODO: PAS HIERONDER DE XAML AAN -->
-
-            <WrapPanel MaxWidth="400" HorizontalAlignment="Center">
-
+            <WrapPanel MaxWidth="400" Background="White" Height="300">
                 <Border BorderBrush="White" BorderThickness="5" Margin="5">
                     <Image Source="/Assignments/img/blazer01.JPG" Width="80"/>
                 </Border>
@@ -48,7 +44,6 @@
                 <Border BorderBrush="White" BorderThickness="5" Margin="5">
                     <Image Source="/Assignments/img/blazer10.JPG" Width="80"/>
                 </Border>
-
             </WrapPanel>
         </Border>
     </Grid>

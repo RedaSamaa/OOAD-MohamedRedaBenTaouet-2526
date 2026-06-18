@@ -19,8 +19,8 @@
             </TextBlock>
 
             <TextBlock TextWrapping="Wrap" FontSize="14" LineHeight="1.8">
-                1. Open de XAML van de oefening. Je vindt het in de map <Run FontWeight="Bold">Exercises</Run> van dit project.<LineBreak/>
-                2. Lees de opdrachttekst grondig.<LineBreak/>
+                1. Open <Run FontStyle="Italic">Assignments/index.html</Run> in de browser.' in de browser; daar vind je de uitleg en opdrachten.<LineBreak/>
+                2. Elke oefening vind je in de map <Run FontStyle="Italic">Exercises</Run>; open telkens de XAML<LineBreak/>
                 3. Vul overal aan waar een <Run Foreground="Green" FontFamily="Consolas">&lt;!-- TODO ... --&gt;</Run> of <Run Foreground="Green" FontFamily="Consolas">// TODO ...</Run> commentaarblok vindt.<LineBreak/><LineBreak/>
                 De code-behind mag niet gewijzigd worden en dient enkel om de pagina te laden.
             </TextBlock>
