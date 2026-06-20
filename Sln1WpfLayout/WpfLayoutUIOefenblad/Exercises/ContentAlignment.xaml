@@ -28,7 +28,7 @@
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="20" Text="~~ Maak een reservatie ~~" Margin="0,0,0,20" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <Label Grid.Row="1" Grid.Column="0" Margin="0,5" Content="E-mail:" />
-            <TextBox Grid.Row="1" Grid.Column="1" Margin="0,5" TextAlignment="Left" VerticalContentAlignment="Center" Text="bobby.peru@lynch.com" TextChanged="TextBox_TextChanged" />
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="0,5" TextAlignment="Left" VerticalContentAlignment="Center" Text="bobby.peru@lynch.com"/>
             <Label Grid.Row="2" Grid.Column="0" Content="Personen" Margin="0,5"/>
             <TextBox Grid.Row="2" Grid.Column="1" Text="3" Height="30" Margin="0,5" Width="100" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" HorizontalAlignment="Left"/>
             <Label Grid.Row="3" Grid.Column="0" Content="Commentaar" Margin="0,0,10,10" VerticalAlignment="Center" />
